@@ -1,0 +1,10 @@
+<!-- index.html.erb -->
+
+<h1>Cockteils</h1>
+
+<% @cocktails.each do |cocktail| %>
+  <%= cocktail.name %>
+  <%= link_to "+", cocktail_path(cocktail)%>
+<% end %>
+<br>
+<%= link_to "Add a new cocktail", new_cocktail_path %>
